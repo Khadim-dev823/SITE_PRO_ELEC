@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="fr" class="no-js">
+<head>
+    <!-- Métadonnées de base -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Khadim Seck - Développeur Web">
+
+    <!-- Titre du site & Référencement SEO -->
+    <title>SMIT - Sen Maintenance Industrielle & Tertiaire | Électricité & Automation au Sénégal</title>
+    <meta name="description" content="SMIT (Sen Maintenance Industrielle & Tertiaire) : Réalisation d'armoires électriques, postes HTA/BT, automatisme, câblage de précision et maintenance industrielle à Dakar et dans tout le Sénégal.">
+    <meta name="keywords" content="SMIT, électricité industrielle Sénégal, maintenance tertiaire Dakar, armoire électrique, poste haute tension, automatisme industriel, câblage électrique, elec.sn">
+    <meta name="author" content="SMIT - Sen Maintenance Industrielle & Tertiaire">
+    <meta name="geo.region" content="SN">
+    <meta name="geo.placename" content="Dakar">
+    <meta name="robots" content="index, follow">
+
+    <!-- Favicon Carré Haute Définition pour l'Onglet -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+
+    <!-- Open Graph (Partage Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="SMIT - Sen Maintenance Industrielle & Tertiaire">
+    <meta property="og:description" content="Ingénierie électrique, maintenance industrielle, tertiaire et confection d'armoires de commande au Sénégal.">
+    <meta property="og:image" content="assets/img/atelier-armoires.jpg">
+    <meta property="og:url" content="https://elec.sn">
+
+    <!-- Police Google Fonts (Montserrat & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Framework Bootstrap 5.3 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome 6 Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Style CSS personnalisé -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="100">
+
+         <!-- ==========================================================================
+                        BARRE SUPÉRIEURE DE CONTACT (TOPBAR COMPACTE MOBILE & PC)
+        ========================================================================== -->
+    <div class="topbar-section text-white py-2">
+        <div class="container">
+            <div class="row align-items-center g-1">
+                <div class="col-12 col-lg-8">
+                    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start gap-2 gap-sm-3 fs-7 text-center text-lg-start">
+                        <span>
+                            <i class="fas fa-phone-alt text-warning me-1"></i>
+                            <a href="tel:+221775436242" class="text-white text-decoration-none">+221 77 543 62 42</a>
+                        </span>
+                        <span>
+                            <i class="fas fa-envelope text-warning me-1"></i>
+                            <a href="mailto:smit@elec.sn" class="text-white text-decoration-none">smit@elec.sn</a>
+                        </span>
+                        <span class="d-none d-sm-inline">
+                            <i class="fas fa-map-marker-alt text-warning me-1"></i>Dakar, Sénégal
+                        </span>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 text-center text-lg-end d-none d-md-block">
+                    <span class="badge bg-warning text-dark fw-bold px-3 py-1 text-uppercase" style="letter-spacing: 0.5px;">
+                        <i class="fas fa-bolt me-1"></i> Qualité • Prix • Délais
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- ==========================================================================
+                        BARRE DE NAVIGATION PRINCIPALE (NAVBAR)
+         ========================================================================== -->
+    <header class="sticky-top bg-white shadow-sm">
+        <nav class="navbar navbar-expand-xl py-2" id="mainNavbar">
+            <div class="container">
+                <!-- Logo SMIT -->
+                <a class="navbar-brand d-flex align-items-center py-0" href="#page-top">
+                    <img src="assets/img/logo.svg" alt="SMIT - Sen Maintenance Industrielle & Tertiaire" height="54">
+                </a>
+
+                <!-- Bouton Menu Mobile (Hamburger) -->
+                <button class="navbar-toggler border-0 p-2 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Afficher le menu">
+                    <i class="fas fa-bars fs-2 text-dark"></i>
+                </button>
+
+                <!-- Liens du Menu -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto me-xl-4 my-2 my-xl-0 fw-semibold text-uppercase fs-7">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#page-top">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#apropos">À Propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Nos Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#realisations">Chantiers</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center gap-2 mt-3 mt-xl-0">
+                        <a href="#contact" class="btn btn-smit-primary text-uppercase fs-7 px-4 shadow-sm">
+                            <i class="fas fa-file-signature me-2"></i>Demander un Devis
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+        <!-- ==========================================================================
+                        SECTION HERO / BANNIÈRE D'ACCUEIL IMMERSIVE
+         ========================================================================== -->
+    <main>
+        <section id="accueil" class="hero-section text-white d-flex align-items-center position-relative">
+            <!-- Overlay d'accentuation électrique -->
+            <div class="hero-overlay"></div>
+
+            <div class="container position-relative z-2 py-5 my-lg-4">
+                <div class="row align-items-center min-vh-70">
+                    <div class="col-lg-9 col-xl-8">
+                        
+                        <!-- Badge d'expertise -->
+                        <div class="d-inline-flex align-items-center gap-2 bg-warning-subtle text-warning border border-warning-subtle px-3 py-1.5 rounded-pill mb-4 fs-7 fw-semibold">
+                            <i class="fas fa-certificate"></i>
+                            <span>Ingénierie, Câblage &amp; Maintenance Électrique au Sénégal</span>
+                        </div>
+
+                        <!-- Titre Principal Impactant -->
+                        <h1 class="display-3 fw-black text-white mb-4 lh-sm">
+                            Sen Maintenance <br class="d-none d-sm-inline">
+                            <span class="text-warning">Industrielle &amp; Tertiaire</span>
+                        </h1>
+
+                        <!-- Argumentation technique -->
+                        <p class="lead mb-4 text-light opacity-90 fs-5 fw-normal pe-lg-5">
+                            De la conception en bureau d'études au câblage d'armoires automatisées, SMIT garantit la continuité de service, la sécurité des installations et la conformité aux normes internationales.
+                        </p>
+
+                        <!-- Boutons d'Action -->
+                        <div class="d-flex flex-wrap align-items-center gap-3 mb-5">
+                            <a href="#services" class="btn btn-smit-primary text-uppercase px-4 py-3 shadow">
+                                <i class="fas fa-tools me-2"></i>Découvrir nos Expertises
+                            </a>
+                            <a href="#contact" class="btn btn-smit-outline text-uppercase px-4 py-3">
+                                <i class="fas fa-paper-plane me-2"></i>Nous Contacter
+                            </a>
+                        </div>
+
+                        <!-- 3 Garanties clés de SMIT -->
+                        <div class="row g-4 pt-4 border-top border-secondary border-opacity-50">
+                            <div class="col-6 col-md-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-warning bg-opacity-10 text-warning p-2.5 rounded-3 fs-4">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white mb-0 fw-bold">100% Conforme</h6>
+                                        <small class="text-white-50">Normes NF C 15-100 / HTA</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-warning bg-opacity-10 text-warning p-2.5 rounded-3 fs-4">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white mb-0 fw-bold">Sur-Mesure</h6>
+                                        <small class="text-white-50">Armoires &amp; Automates</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-4">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="bg-warning bg-opacity-10 text-warning p-2.5 rounded-3 fs-4">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-white mb-0 fw-bold">Réactivité 24/7</h6>
+                                        <small class="text-white-50">Interventions &amp; Dépannage</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+            <!-- ==========================================================================
+                         SECTION À PROPOS & BUREAU D'ÉTUDES
+             ========================================================================== -->
+        <section id="apropos" class="py-5 bg-light position-relative">
+            <div class="container py-4 my-lg-3">
+                <div class="row align-items-center g-5">
+                    
+                    <!-- Colonne Gauche : Image du Bureau d'Études sur Chantier -->
+                    <div class="col-lg-6">
+                        <div class="position-relative pe-lg-3">
+                            <!-- Image principale -->
+                            <div class="rounded-4 overflow-hidden shadow-lg border border-white border-4">
+                                <img src="assets/img/chantiers-etudes.jpg" alt="Bureau d'études SMIT - Analyse de plans électriques sur chantier" class="img-fluid w-100 object-fit-cover" style="min-height: 420px; max-height: 520px;">
+                            </div>
+
+                            <!-- Badge Flottant "Bureau d'Études" -->
+                            <div class="position-absolute bottom-0 start-0 translate-middle-y bg-dark text-white p-4 rounded-4 shadow-lg ms-3 mb-3 border-start border-4 border-warning d-none d-sm-block" style="max-width: 290px;">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fas fa-drafting-compass fs-1 text-warning"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-1 text-white">Bureau d'Études</h6>
+                                        <small class="text-white-50 fs-7">Analyse &amp; Conception de plans de câblage</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Droite : Textes et Valeurs SMIT -->
+                    <div class="col-lg-6">
+                        <!-- Sur-titre -->
+                        <span class="text-warning text-uppercase fw-bold fs-7 letter-spacing-1 d-block mb-2">
+                            <i class="fas fa-bolt me-1"></i> À Propos de SMIT
+                        </span>
+
+                        <!-- Titre Section -->
+                        <h2 class="display-6 fw-bold mb-4">
+                            L'Ingénierie Électrique au Service des Entreprises du Sénégal
+                        </h2>
+
+                        <!-- Paragraphe 1 -->
+                        <p class="text-muted mb-4 fs-6">
+                            Fondée sur des principes rigoureux de <strong>Qualité, Prix et Délais</strong>, l'entreprise <strong>SMIT (Sen Maintenance Industrielle &amp; Tertiaire)</strong> est un acteur de référence dans la conception, la réalisation et la maintenance des réseaux électriques à Dakar et dans les régions.
+                        </p>
+
+                        <p class="text-muted mb-4 fs-6">
+                            Du dimensionnement d'une armoire de commande d'automatisme jusqu'à la mise en conformité d'un poste Haute Tension (HTA/BT), nos ingénieurs et techniciens certifiés garantissent des installations fiables et durables.
+                        </p>
+
+                        <!-- Piliers d'excellence -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-white border shadow-sm">
+                                    <i class="fas fa-check-circle text-warning fs-4 mt-1"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Études &amp; Schémas</h6>
+                                        <small class="text-muted fs-7">Bilan de puissance &amp; plans unifilaires.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-white border shadow-sm">
+                                    <i class="fas fa-check-circle text-warning fs-4 mt-1"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Câblage de Précision</h6>
+                                        <small class="text-muted fs-7">Confection d'armoires sur-mesure.</small>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="d-flex align-items-start gap-3 p-3 rounded-3 bg-white border shadow-sm">
+                                    <i class="fas fa-check-circle text-warning fs-4 mt-1"></i>
+                                    <div>
+                                        <h6 class="fw-bold mb-1">Sécurité &amp; Travaux en Hauteur</h6>
+                                        <small class="text-muted fs-7">Équipes habilitées avec équipements de protection individuels (EPI).</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Citation de la Devise Officielle SMIT -->
+                        <div class="p-3 rounded-3 bg-dark text-white border-start border-4 border-warning d-flex align-items-center justify-content-between shadow-sm">
+                            <div>
+                                <span class="badge bg-warning text-dark fw-bold mb-1">Notre Devise Officielle</span>
+                                <p class="mb-0 fw-semibold text-light fs-6">« Qualité irréprochable • Prix compétitif • Délais respectés »</p>
+                            </div>
+                            <i class="fas fa-hard-hat fs-2 text-warning opacity-75 d-none d-sm-block"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            <!-- ==========================================================================
+                         SECTION NOS SERVICES & EXPERTISES
+             ========================================================================== -->
+        <section id="services" class="py-5 position-relative">
+            <div class="container py-4 my-lg-3">
+                
+                <!-- En-tête de la section -->
+                <div class="text-center mx-auto mb-5" style="max-width: 750px;">
+                    <span class="text-warning text-uppercase fw-bold fs-7 letter-spacing-1 d-block mb-2">
+                        <i class="fas fa-bolt me-1"></i> Savoir-Faire Technique
+                    </span>
+                    <h2 class="display-6 fw-bold mb-3">Nos Domaines d'Expertise &amp; Services</h2>
+                    <p class="text-muted fs-6">
+                        SMIT propose une gamme complète de prestations à haute valeur ajoutée pour répondre aux exigences les plus strictes des secteurs industriel, tertiaire et commercial au Sénégal.
+                    </p>
+                </div>
+
+                <!-- Grille des 6 Services de SMIT -->
+                <div class="row g-4">
+
+                    <!-- SERVICE 1 : Électricité Industrielle & Automatisme -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/armoire-automate.jpg" alt="Automatisme et électricité industrielle SMIT" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">Industrie</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-microchip"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Électricité &amp; Automatisme</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Programmation d'automates industriels, câblage d'armoires de régulation, variateurs de vitesse et optimisation des procédés de production.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 2 : Confection & Câblage d'Armoires -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/atelier-armoires.jpg" alt="Confection d'armoires électriques en atelier" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">Atelier</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-boxes-stacked"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Armoires &amp; Coffrets sur-mesure</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Assemblage, repérage et câblage de précision pour armoires de distribution, tableaux généraux basse tension (TGBT) et coffrets de commande.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 3 : Postes Haute & Basse Tension (HTA/BT) -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/poste-haute-tension.jpg" alt="Poste Haute Tension HTA et Transformateur" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">Haute Tension</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-bolt"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Postes HTA / BT &amp; Transfos</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Installation, raccordement et maintenance préventive des cellules Haute Tension, transformateurs de puissance et postes de transformation.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 4 : TGBT, Masterpact & Puissance -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/chantier-masterpact.jpg" alt="Intervention sur disjoncteur Masterpact TGBT" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">TGBT</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-sliders"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Gros Calibres &amp; Masterpact</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Maintenance et paramétrage des disjoncteurs de forte puissance (Schneider Masterpact, NSX), jeux de barres et inverseurs de source.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 5 : Audits, Mesures & Sous-Stations -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/mesures-sous-station.jpg" alt="Mesures électriques et contrôle en sous-station" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">Audit</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Audit &amp; Mesures Électriques</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Contrôle thermographique, équilibrage des phases, analyse de la qualité de l'onde électrique et recherche d'anomalies en sous-station.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SERVICE 6 : Travaux en Hauteur & Électrification Tertiaire -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden service-card">
+                            <div class="position-relative overflow-hidden" style="height: 220px;">
+                                <img src="assets/img/travaux-hauteur.jpg" alt="Travaux en hauteur sur échafaudage sécurisé" class="img-fluid w-100 h-100 object-fit-cover">
+                                <span class="badge bg-warning text-dark position-absolute top-0 end-0 m-3 px-3 py-2 fw-bold">Tertiaire</span>
+                            </div>
+                            <div class="card-body p-4 d-flex flex-column">
+                                <div class="d-flex align-items-center gap-3 mb-3">
+                                    <div class="bg-primary-subtle text-primary p-2.5 rounded-3 fs-4" style="color: var(--primary-blue) !important;">
+                                        <i class="fas fa-building-user"></i>
+                                    </div>
+                                    <h5 class="fw-bold card-title mb-0">Maintenance Tertiaire &amp; Hauteur</h5>
+                                </div>
+                                <p class="card-text text-muted fs-7 mb-4 flex-grow-1">
+                                    Pose de chemins de câbles, éclairage industriel, raccordements en hauteur sur échafaudages et rénovation électrique pour immeubles &amp; bureaux.
+                                </p>
+                                <a href="#contact" class="text-warning fw-bold text-decoration-none fs-7 d-inline-flex align-items-center gap-2">
+                                    Demander une étude <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            <!-- ==========================================================================
+                            SECTION GALERIE / CHANTIERS RÉELS SMIT
+             ========================================================================== -->
+        <section id="realisations" class="py-5 bg-light position-relative">
+            <div class="container py-4 my-lg-3">
+                
+                <!-- En-tête de section -->
+                <div class="row align-items-end mb-5">
+                    <div class="col-lg-8">
+                        <span class="text-warning text-uppercase fw-bold fs-7 letter-spacing-1 d-block mb-2">
+                            <i class="fas fa-camera me-1"></i> Preuves du Terrain
+                        </span>
+                        <h2 class="display-6 fw-bold mb-0">Nos Réalisations &amp; Chantiers Récents</h2>
+                    </div>
+                    <div class="col-lg-4 text-lg-end mt-3 mt-lg-0">
+                        <p class="text-muted mb-0 fs-7">
+                            Aperçu réel de nos interventions, câblages en atelier et travaux de maintenance au Sénégal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Grille Portfolio avec photos réelles SMIT -->
+                <div class="row g-4">
+
+                    <!-- Photo 1: Câblage Précision -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/cablage-precision.jpg" alt="Câblage électrique de précision par technicien SMIT" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">Automatisme</span>
+                                <h5 class="fw-bold mb-1">Câblage de Précision</h5>
+                                <p class="small text-white-50 mb-0">Raccordement méticuleux des borniers et automates.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 2: Dénudage & Sertissage -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/denudage-cables.jpg" alt="Technicien SMIT préparant les câbles" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">Maintenance</span>
+                                <h5 class="fw-bold mb-1">Préparation &amp; Sertissage</h5>
+                                <p class="small text-white-50 mb-0">Dénudage et raccordement conforme aux normes de sécurité.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 3: Portes Armoires Électriques -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/portes-armoires.jpg" alt="Série d'armoires électriques prêtes en atelier" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">Fabrication</span>
+                                <h5 class="fw-bold mb-1">Armoires Finalisées</h5>
+                                <p class="small text-white-50 mb-0">Tableaux de commande testés et prêts à la livraison.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 4: Masterpact / TGBT -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/chantier-masterpact.jpg" alt="Intervention TGBT Masterpact SMIT" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">TGBT &amp; Puissance</span>
+                                <h5 class="fw-bold mb-1">Disjoncteur Masterpact</h5>
+                                <p class="small text-white-50 mb-0">Maintenance sur disjoncteur débrochable de forte puissance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 5: Travaux en Hauteur -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/travaux-hauteur.jpg" alt="Technicien SMIT sur échafaudage sur site" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">Sécurité / EPI</span>
+                                <h5 class="fw-bold mb-1">Chantier en Hauteur</h5>
+                                <p class="small text-white-50 mb-0">Pose de goulottes et chemins de câbles sur échafaudage.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Photo 6: Mesures Sous-Station -->
+                    <div class="col-md-6 col-lg-4">
+                        <div class="gallery-item rounded-4 overflow-hidden position-relative shadow-sm">
+                            <img src="assets/img/mesures-sous-station.jpg" alt="Équipe SMIT effectuant des mesures en sous-station" class="img-fluid w-100 object-fit-cover" style="height: 320px;">
+                            <div class="gallery-overlay p-4 d-flex flex-column justify-content-end text-white">
+                                <span class="badge bg-warning text-dark w-auto align-self-start mb-2 fw-bold">Sous-Station</span>
+                                <h5 class="fw-bold mb-1">Contrôle &amp; Diagnostic</h5>
+                                <p class="small text-white-50 mb-0">Vérification des paramètres et bilans de puissance.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+            <!-- ==========================================================================
+                            SECTION CONTACT & DEMANDE DE DEVIS
+             ========================================================================== -->
+        <section id="contact" class="py-5 position-relative">
+            <div class="container py-4 my-lg-3">
+                
+                <!-- En-tête de section -->
+                <div class="text-center mx-auto mb-5" style="max-width: 700px;">
+                    <span class="text-warning text-uppercase fw-bold fs-7 letter-spacing-1 d-block mb-2">
+                        <i class="fas fa-paper-plane me-1"></i> Restons en Contact
+                    </span>
+                    <h2 class="display-6 fw-bold mb-3">Demandez un Devis Gratuit ou une Intervention</h2>
+                    <p class="text-muted fs-6">
+                        Une urgence électrique, un projet d'armoire sur-mesure ou une maintenance tertiaire ? L'équipe de SMIT est à votre disposition partout au Sénégal.
+                    </p>
+                </div>
+
+                <div class="row g-4 g-lg-5">
+                    
+                    <!-- Colonne Gauche : Coordonnées Réelles SMIT -->
+                    <div class="col-lg-5">
+                        <div class="bg-dark text-white p-4 p-md-5 rounded-4 h-100 shadow-lg d-flex flex-column justify-content-between">
+                            <div>
+                                <h3 class="fw-bold text-white mb-4">Coordonnées Réelles</h3>
+                                <p class="text-white-50 mb-4 fs-7">
+                                    Contactez directement nos responsables techniques par téléphone ou email pour une réponse rapide.
+                                </p>
+
+                                <!-- Téléphones -->
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <div class="bg-warning text-dark p-3 rounded-3 fs-5">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-warning fw-bold mb-1">Lignes Directes (Sénégal)</h6>
+                                        <a href="tel:+221775436242" class="text-white text-decoration-none d-block fw-semibold">+221 77 543 62 42</a>
+                                        <a href="tel:+221775359028" class="text-white text-decoration-none d-block fw-semibold">+221 77 535 90 28</a>
+                                        <a href="tel:+221775457794" class="text-white-50 text-decoration-none d-block fs-7">+221 77 545 77 94</a>
+                                    </div>
+                                </div>
+
+                                <!-- Email -->
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <div class="bg-warning text-dark p-3 rounded-3 fs-5">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-warning fw-bold mb-1">Email Officiel</h6>
+                                        <a href="mailto:smit@elec.sn" class="text-white text-decoration-none fw-semibold">smit@elec.sn</a>
+                                    </div>
+                                </div>
+
+                                <!-- Zone d'Intervention -->
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <div class="bg-warning text-dark p-3 rounded-3 fs-5">
+                                        <i class="fas fa-location-dot"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-warning fw-bold mb-1">Zone d'Intervention</h6>
+                                        <p class="text-white mb-0 fw-semibold">Dakar &amp; Toutes Régions du Sénégal</p>
+                                    </div>
+                                </div>
+
+                                <!-- Disponibilité -->
+                                <div class="d-flex align-items-start gap-3 mb-4">
+                                    <div class="bg-warning text-dark p-3 rounded-3 fs-5">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h6 class="text-warning fw-bold mb-1">Disponibilité</h6>
+                                        <p class="text-white mb-0 fs-7">Lun - Sam : 08h00 - 18h00</p>
+                                        <span class="badge bg-warning text-dark fw-bold mt-1">Urgence Dépannage 24/7</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Footer de la carte -->
+                            <div class="pt-4 border-top border-secondary border-opacity-50">
+                                <small class="text-white-50"><i class="fas fa-shield-alt text-warning me-1"></i> Réponse garantie sous 24 heures ouvrées.</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Colonne Droite : Formulaire de Devis -->
+                    <div class="col-lg-7">
+                        <div class="bg-white p-4 p-md-5 rounded-4 border shadow-sm h-100">
+                            <h3 class="fw-bold mb-2">Envoyez-nous un Message</h3>
+                            <p class="text-muted mb-4 fs-7">Remplissez le formulaire ci-dessous pour recevoir une estimation de votre projet.</p>
+
+                            <form id="contactForm">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="nom" class="form-label fw-semibold fs-7">Nom &amp; Prénom <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control form-control-lg fs-6" id="nom" placeholder="Ex: Khadim Seck" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="telephone" class="form-label fw-semibold fs-7">Numéro de Téléphone <span class="text-danger">*</span></label>
+                                        <input type="tel" class="form-control form-control-lg fs-6" id="telephone" placeholder="Ex: +221 77 000 00 00" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="email" class="form-label fw-semibold fs-7">Adresse Email</label>
+                                        <input type="email" class="form-control form-control-lg fs-6" id="email" placeholder="Ex: nom@domaine.sn">
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="service" class="form-label fw-semibold fs-7">Type de Prestation <span class="text-danger">*</span></label>
+                                        <select class="form-select form-select-lg fs-6" id="service" required>
+                                            <option value="" selected disabled>Choisissez un service...</option>
+                                            <option value="Armoire Électrique">Confection d'Armoire Électrique</option>
+                                            <option value="Électricité Industrielle">Électricité Industrielle &amp; Automatisme</option>
+                                            <option value="Poste HTA/BT">Poste Haute Tension (HTA/BT)</option>
+                                            <option value="Maintenance Tertiaire">Maintenance &amp; Électrification Tertiaire</option>
+                                            <option value="Dépannage Urgent">Dépannage Urgence / Audit</option>
+                                            <option value="Autre">Autre projet</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <label for="message" class="form-label fw-semibold fs-7">Détails de votre Projet / Message <span class="text-danger">*</span></label>
+                                        <textarea class="form-control fs-6" id="message" rows="4" placeholder="Décrivez votre besoin (lieu du chantier, puissance requise, contraintes...)" required></textarea>
+                                    </div>
+
+                                    <div class="col-12 mt-4">
+                                        <button type="submit" class="btn btn-smit-primary w-100 py-3 text-uppercase fw-bold shadow">
+                                            <i class="fas fa-paper-plane me-2"></i>Envoyer la Demande de Devis
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carte Google Maps (Dakar, Sénégal) -->
+                <div class="row mt-5">
+                    <div class="col-12">
+                        <div class="rounded-4 overflow-hidden border shadow-sm">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123439.12345!2d-17.46768!3d14.71667!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec10e03a3d5e2e7%3A0x8e833481234567!2sDakar%2C%20S%C3%A9n%C3%A9gal!5e0!3m2!1sfr!2ssn!4v1700000000000!5m2!1sfr!2ssn" width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+        <!-- ==========================================================================
+                        FOOTER / PIED DE PAGE COMPLET SMIT
+         ========================================================================== -->
+    <footer class="bg-dark text-white pt-5 pb-3 border-top border-secondary border-opacity-25">
+        <div class="container pt-3">
+            <div class="row g-4 mb-5">
+                
+                <!-- Colonne 1 : Logo & Présentation -->
+                <div class="col-lg-4 col-md-6">
+                    <img src="assets/img/logo.svg" alt="SMIT Logo" height="50" class="mb-3 bg-white p-2 rounded-3">
+                    <p class="text-white-50 fs-7 mb-3">
+                        SMIT (Sen Maintenance Industrielle &amp; Tertiaire) est spécialisée dans l’ingénierie électrique, la confection d'armoires sur-mesure, l'automatisme et les travaux Haute/Basse Tension au Sénégal.
+                    </p>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="badge bg-warning text-dark fw-bold">Devise</span>
+                        <span class="text-light fs-7 fw-semibold">Qualité • Prix • Délais</span>
+                    </div>
+                </div>
+
+                <!-- Colonne 2 : Navigation Rapide -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="text-warning fw-bold text-uppercase mb-3 fs-7">Navigation</h6>
+                    <ul class="list-unstyled footer-links fs-7">
+                        <li class="mb-2"><a href="#page-top" class="text-white-50 text-decoration-none"><i class="fas fa-angle-right me-1 text-warning"></i> Accueil</a></li>
+                        <li class="mb-2"><a href="#apropos" class="text-white-50 text-decoration-none"><i class="fas fa-angle-right me-1 text-warning"></i> À Propos</a></li>
+                        <li class="mb-2"><a href="#services" class="text-white-50 text-decoration-none"><i class="fas fa-angle-right me-1 text-warning"></i> Nos Services</a></li>
+                        <li class="mb-2"><a href="#realisations" class="text-white-50 text-decoration-none"><i class="fas fa-angle-right me-1 text-warning"></i> Chantiers</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-white-50 text-decoration-none"><i class="fas fa-angle-right me-1 text-warning"></i> Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 3 : Domaines d'Expertise -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-warning fw-bold text-uppercase mb-3 fs-7">Nos Expertises</h6>
+                    <ul class="list-unstyled footer-links fs-7 text-white-50">
+                        <li class="mb-2"><i class="fas fa-bolt text-warning me-2"></i> Armoires Électriques</li>
+                        <li class="mb-2"><i class="fas fa-bolt text-warning me-2"></i> Automatisme Industriel</li>
+                        <li class="mb-2"><i class="fas fa-bolt text-warning me-2"></i> Postes HTA / BT</li>
+                        <li class="mb-2"><i class="fas fa-bolt text-warning me-2"></i> Maintenance Tertiaire</li>
+                        <li class="mb-2"><i class="fas fa-bolt text-warning me-2"></i> Audits &amp; Mesures</li>
+                    </ul>
+                </div>
+
+                <!-- Colonne 4 : Contact Rapide & WhatsApp -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="text-warning fw-bold text-uppercase mb-3 fs-7">Contact Direct</h6>
+                    <p class="text-white-50 fs-7 mb-2"><i class="fas fa-phone-alt text-warning me-2"></i> +221 77 543 62 42</p>
+                    <p class="text-white-50 fs-7 mb-2"><i class="fas fa-envelope text-warning me-2"></i> smit@elec.sn</p>
+                    <p class="text-white-50 fs-7 mb-3"><i class="fas fa-map-marker-alt text-warning me-2"></i> Dakar, Sénégal</p>
+                    <a href="https://wa.me/221775436242" target="_blank" class="btn btn-success btn-sm rounded-pill px-3 fw-bold">
+                        <i class="fab fa-whatsapp me-1 fs-5"></i> WhatsApp Direct
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Ligne de Copyright -->
+            <div class="row pt-4 border-top border-secondary border-opacity-25 text-center text-md-start align-items-center">
+                <div class="col-md-8">
+                    <p class="text-white-50 fs-7 mb-0">
+                        &copy; 2026 <strong>SMIT</strong> - Sen Maintenance Industrielle &amp; Tertiaire. Tous droits réservés.
+                    </p>
+                </div>
+                <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                    <small class="text-white-50">Ingénierie &amp; Développement Web Sénégal</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bouton Flottant "Retour en haut" -->
+    <a href="#page-top" id="backToTop" class="btn btn-warning rounded-circle shadow position-fixed bottom-0 end-0 m-4 d-none z-3" style="width: 48px; height: 48px; line-height: 34px;">
+        <i class="fas fa-arrow-up text-dark fw-bold"></i>
+    </a>
+    <!-- Scripts JS Bootstrap & JS Personnalisé -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
